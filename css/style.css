@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root {
+    --very_dark_desaturated_blue: hsl(238, 29%, 16%);
+    --soft_red: hsl(14, 88%, 65%);
+    --soft_violet: hsl(273, 75%, 66%);
+    --soft_blue: hsl(240, 73%, 65%);
+    --very_dark_grayish_blue: hsl(237, 12%, 33%);
+    --dark_grayish_blue: hsl(240, 6%, 50%);
+    --light_grayish_blue: hsl(240, 5%, 91%);
+    --font: 'Kumbh Sans', sans-serif;    ;
+}
+
+html, body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(var(--soft_violet), var(--soft_blue));
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: white;
+    border-radius: 20px;
+    width: 900px;
+    height: 500px;
+}
+
+/*========ITENS DO ASIDE*/
+
+aside{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__faq__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-right: 130px;
+}
+
+.faq__img-2{
+    display: flex;
+    margin-top: 100px;
+    margin-right: 330px;
+}
+
+hr{
+    margin: 10px;
+}
+
+/*========CARD DO FAQ========*/
+
+.card__faq{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    width: 75%;
+    height:380px;
+    padding-right: 100px;
+    left: -500px;
+}
+
+.card__faq__items{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1.9px groove var(--light_grayish_blue);
+}
+
+.faq__c{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+    width: 350px;  
+}
+
+.faq__c:hover{
+    cursor: pointer;
+}
+
+.items__title{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    color: var(--very_dark_grayish_blue);
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+}
+
+.items__title:hover{
+    color: var(--soft_red);
+}
+
+.item__arrow{
+    display: block;
+}
+
+.items__desc{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dark_grayish_blue);
+    margin: 0 10px 25px 10px;
+    display: none;
+    text-align: left;
+}
